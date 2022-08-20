@@ -21,7 +21,7 @@
 <body>
     <!-- header section start here  -->
     <header>
-        <div class="btm-nav">
+        <div class="btm-nav z-10">
             <button class="bg-pink-200 text-pink-600">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -50,12 +50,115 @@
     <!-- main section start here -->
     <main>
         <!-- section part start here  -->
-        <section>
+        <section class="w-11/12 mx-auto mt-10 pb-40">
+            <div class="grid grid-cols-2 gap-4 divide-x divide-pink-500">
             <div class="grid grid-cols-2 gap-4">
-                <div>All Products</div>
-                <!-- ... -->
-                <div>Products Card </div>
+                <!-- All Products  -->
+                <!-- Products -- 1  -->
+            <div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl gap-2">
+                    <figure><img
+                            src="https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvZmZlZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                            class="w-full h-40" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Hot Coffee!</h2>
+                        <p>Price : $<span>100</span></p>
+                        <p>Coffee makes us severe, and philosophical.</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+                <!-- Products -- 2  -->
+            <div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl gap-2">
+                    <figure><img
+                            src="https://images.unsplash.com/photo-1630409346824-4f0e7b080087?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlyaXlhbml8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="w-full h-40" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Hot Biriyani!</h2>
+                        <p>Price : $<span>105</span></p>
+                        <p>Biryani is nothing but, just a state of happiness.</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Products -- 3  -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl gap-2">
+                        <figure><img
+                                src="https://images.unsplash.com/photo-1625242662341-5e92c5101338?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bWlsa3NoYWtlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                class="w-full h-40" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">MilkShake!</h2>
+                            <p>Price : $<span>110</span></p>
+                            <p>My brain says diet, but my tummy says milkshake.</p>
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Products -- 4  -->
+            <div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl gap-2">
+                    <figure><img
+                            src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGl6emF8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="w-full h-40" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pizza!</h2>
+                        <p>Price : $<span>150</span></p>
+                        <p>“Pizza is like the entire food pyramid!”</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Products -- 5  -->
+            <div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl gap-2">
+                    <figure><img
+                            src="https://images.unsplash.com/photo-1582169296194-e4d644c48063?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmFjaG9zfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            class="w-full h-40" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Nachos!</h2>
+                        <p>Price : $<span>110</span></p>
+                        <p>“Life is like nachos, you have to pour on it with the best toppings.”</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!-- Products card-->
+            <div>
+                <h2 class="text-3xl text-center">Total Added Products
+                    <span class="text-rose-500 font-bold">0</span>
+                </h2>
+                <!-- table start here  -->
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- row 1 -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- table end here  -->
+            </div>
+        </div>
         </section>
         <!-- section part end here  -->
     </main>
