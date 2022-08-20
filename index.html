@@ -65,7 +65,7 @@
                         <p>Price : $<span>100</span></p>
                         <p>Coffee makes us severe, and philosophical.</p>
                         <div class="card-actions justify-center">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                         <p>Price : $<span>105</span></p>
                         <p>Biryani is nothing but, just a state of happiness.</p>
                         <div class="card-actions justify-center">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                             <p>Price : $<span>110</span></p>
                             <p>My brain says diet, but my tummy says milkshake.</p>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary">Buy Now</button>
+                                <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -111,9 +111,9 @@
                     <div class="card-body">
                         <h2 class="card-title">Pizza!</h2>
                         <p>Price : $<span>150</span></p>
-                        <p>“Pizza is like the entire food pyramid!”</p>
+                        <p>“Pizza is like the entire food pyramid!Very yummy!!”</p>
                         <div class="card-actions justify-center">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,22 @@
                         <p>Price : $<span>110</span></p>
                         <p>“Life is like nachos, you have to pour on it with the best toppings.”</p>
                         <div class="card-actions justify-center">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Products -- 6  -->
+            <div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl gap-2">
+                    <figure><img
+                            src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGFzdGF8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="w-full h-40" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pasta!</h2>
+                        <p>Price : $<span>90</span></p>
+                        <p>“Eat pasta, live longer.Life is good. Pasta is better.”</p>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -138,21 +153,25 @@
                 <!-- Products card-->
             <div>
                 <h2 class="text-3xl text-center">Total Added Products
-                    <span class="text-rose-500 font-bold">0</span>
+                    <span class="text-rose-500 font-bold" id="total-added-products">0</span>
                 </h2>
                 <!-- table start here  -->
                 <div class="overflow-x-auto">
-                    <table class="table w-full">
+                    <table class="table table-zebra w-full">
                         <!-- head -->
                         <thead>
                             <tr>
                                 <th></th>
                                 <th>Name</th>
-                                <th>Price</th>
+                                <th>Price</th> 
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="cart-products">
                             <!-- row 1 -->
+                            <!-- <tr>
+                                <th>1</th>
+                                <td>Cy Ganderton</td>
+                                <td>Quality Control Specialist</td> -->
                         </tbody>
                     </table>
                 </div>
